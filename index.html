@@ -1,0 +1,2029 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slowakisch lernen - Das Alphabet</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0b4f9f 0%, #1e88e5 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .flag {
+            font-size: 3em;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .intro {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid #1e88e5;
+        }
+
+        .intro h2 {
+            color: #0b4f9f;
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            color: #0b4f9f;
+            font-size: 2em;
+            margin: 30px 0 20px 0;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #1e88e5;
+        }
+
+        .alphabet-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .letter-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 15px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-color: #1e88e5;
+        }
+
+        .letter-main {
+            font-size: 3em;
+            font-weight: bold;
+            color: #0b4f9f;
+            margin-bottom: 10px;
+        }
+
+        .pronunciation {
+            background: #fff3e0;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .pronunciation strong {
+            color: #e65100;
+        }
+
+        .german-comparison {
+            background: #e8f5e9;
+            padding: 10px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+
+        .german-comparison strong {
+            color: #2e7d32;
+        }
+
+        .example {
+            background: #f3e5f5;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-style: italic;
+        }
+
+        .special-note {
+            background: #ffebee;
+            border-left: 4px solid #c62828;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .tips-box {
+            background: #e1f5fe;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+
+        .tips-box h3 {
+            color: #01579b;
+            margin-bottom: 15px;
+        }
+
+        .tips-box ul {
+            margin-left: 20px;
+        }
+
+        .tips-box li {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #263238;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .audio-btn {
+            background: #1e88e5;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .audio-btn:hover {
+            background: #0b4f9f;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            
+            .alphabet-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 Slowakisch für Deutsche</h1>
+            <p>Lerne das slowakische Alphabet mit deutscher Aussprache-Hilfe</p>
+            <div class="flag-container">
+                <div class="flag">🇩🇪</div>
+                <div style="font-size: 2em;">→</div>
+                <div class="flag">🇸🇰</div>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="intro">
+                <h2>Willkommen!</h2>
+                <p>Das slowakische Alphabet hat 46 Buchstaben und basiert auf dem lateinischen Alphabet. Viele Buchstaben werden ähnlich wie im Deutschen ausgesprochen, aber es gibt einige wichtige Unterschiede. Diese Seite hilft dir, die Aussprache zu meistern!</p>
+            </div>
+
+            <div class="tips-box">
+                <h3>📌 Wichtige Grundregeln:</h3>
+                <ul>
+                    <li><strong>Betonung:</strong> Im Slowakischen liegt die Betonung IMMER auf der ersten Silbe</li>
+                    <li><strong>Vokallänge:</strong> Lange Vokale werden mit einem Akzent (´) markiert: á, é, í, ó, ú, ý</li>
+                    <li><strong>Weiche Konsonanten:</strong> ď, ť, ň, ľ werden weich ausgesprochen</li>
+                    <li><strong>R-Laut:</strong> Das slowakische R wird gerollt wie im Bayerischen</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Das slowakische Alphabet</h2>
+
+            <div class="alphabet-grid">
+                <!-- A -->
+                <div class="letter-card">
+                    <div class="letter-main">A a</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "a"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Apfel
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>auto</strong> (Auto)
+                    </div>
+                </div>
+
+                <!-- Á -->
+                <div class="letter-card">
+                    <div class="letter-main">Á á</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "a" (wie "Aah")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Saal
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>áno</strong> (ja)
+                    </div>
+                </div>
+
+                <!-- Ä -->
+                <div class="letter-card">
+                    <div class="letter-main">Ä ä</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "ä"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Äpfel
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>päť</strong> (fünf)
+                    </div>
+                </div>
+
+                <!-- B -->
+                <div class="letter-card">
+                    <div class="letter-main">B b</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "b"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Ball
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>brat</strong> (Bruder)
+                    </div>
+                </div>
+
+                <!-- C -->
+                <div class="letter-card">
+                    <div class="letter-main">C c</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "ts" in "Zahl"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Zunge, Katze
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>cesta</strong> (Weg)
+                    </div>
+                </div>
+
+                <!-- Č -->
+                <div class="letter-card">
+                    <div class="letter-main">Č č</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "tsch" in "Tschüss"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Tschechien
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>čaj</strong> (Tee)
+                    </div>
+                </div>
+
+                <!-- D -->
+                <div class="letter-card">
+                    <div class="letter-main">D d</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "d"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Dach
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>dom</strong> (Haus)
+                    </div>
+                </div>
+
+                <!-- Ď -->
+                <div class="letter-card">
+                    <div class="letter-main">Ď ď</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> weiches "dj" (wie "Dü")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> ähnlich wie in "Adieu"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ďakujem</strong> (danke)
+                    </div>
+                </div>
+
+                <!-- DZ -->
+                <div class="letter-card">
+                    <div class="letter-main">Dz dz</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "ds" in "abends"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Lands-mann
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>medza</strong> (Grenze)
+                    </div>
+                </div>
+
+                <!-- DŽ -->
+                <div class="letter-card">
+                    <div class="letter-main">Dž dž</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "dsch" in "Dschungel"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Dschungel
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>džús</strong> (Saft)
+                    </div>
+                </div>
+
+                <!-- E -->
+                <div class="letter-card">
+                    <div class="letter-main">E e</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "e"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Ente
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>jeden</strong> (eins)
+                    </div>
+                </div>
+
+                <!-- É -->
+                <div class="letter-card">
+                    <div class="letter-main">É é</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "e" (wie "Eeh")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> See
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>mléko</strong> (Milch)
+                    </div>
+                </div>
+
+                <!-- F -->
+                <div class="letter-card">
+                    <div class="letter-main">F f</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "f"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Fisch
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>fajn</strong> (fein, gut)
+                    </div>
+                </div>
+
+                <!-- G -->
+                <div class="letter-card">
+                    <div class="letter-main">G g</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "g" in "Garten"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Garten (immer hart!)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>gitara</strong> (Gitarre)
+                    </div>
+                </div>
+
+                <!-- H -->
+                <div class="letter-card">
+                    <div class="letter-main">H h</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "h"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Haus
+                    </div>
+                                        <div class="example">
+                        Beispiel: <strong>hlava</strong> (Kopf)
+                    </div>
+                </div>
+
+                <!-- CH -->
+                <div class="letter-card">
+                    <div class="letter-main">Ch ch</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "ch" in "Bach"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Buch, ach
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>chlieb</strong> (Brot)
+                    </div>
+                </div>
+
+                <!-- I -->
+                <div class="letter-card">
+                    <div class="letter-main">I i</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "i"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Igel
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>isť</strong> (gehen)
+                    </div>
+                </div>
+
+                <!-- Í -->
+                <div class="letter-card">
+                    <div class="letter-main">Í í</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "i" (wie "Iih")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Liebe
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>víno</strong> (Wein)
+                    </div>
+                </div>
+
+                <!-- J -->
+                <div class="letter-card">
+                    <div class="letter-main">J j</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "j" in "ja"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Jahr
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ja</strong> (ich)
+                    </div>
+                </div>
+
+                <!-- K -->
+                <div class="letter-card">
+                    <div class="letter-main">K k</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "k"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Katze
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>kniha</strong> (Buch)
+                    </div>
+                </div>
+
+                <!-- L -->
+                <div class="letter-card">
+                    <div class="letter-main">L l</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "l"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Lampe
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>les</strong> (Wald)
+                    </div>
+                </div>
+
+                <!-- Ĺ -->
+                <div class="letter-card">
+                    <div class="letter-main">Ĺ ĺ</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "l"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie "l" aber länger gezogen
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>kĺb</strong> (Gelenk)
+                    </div>
+                </div>
+
+                <!-- Ľ -->
+                <div class="letter-card">
+                    <div class="letter-main">Ľ ľ</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> weiches "lj" (wie "Lü")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> ähnlich wie italienisch "gli"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ľudia</strong> (Leute)
+                    </div>
+                </div>
+
+                <!-- M -->
+                <div class="letter-card">
+                    <div class="letter-main">M m</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "m"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Maus
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>mama</strong> (Mama)
+                    </div>
+                </div>
+
+                <!-- N -->
+                <div class="letter-card">
+                    <div class="letter-main">N n</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "n"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Nase
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>noc</strong> (Nacht)
+                    </div>
+                </div>
+
+                <!-- Ň -->
+                <div class="letter-card">
+                    <div class="letter-main">Ň ň</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> weiches "nj" (wie "Nü")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> ähnlich wie spanisch "ñ"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>konň</strong> (Pferd)
+                    </div>
+                </div>
+
+                <!-- O -->
+                <div class="letter-card">
+                    <div class="letter-main">O o</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "o"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Ofen
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>oko</strong> (Auge)
+                    </div>
+                </div>
+
+                <!-- Ó -->
+                <div class="letter-card">
+                    <div class="letter-main">Ó ó</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "o" (wie "Ooh")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Boot
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>móda</strong> (Mode)
+                    </div>
+                </div>
+
+                <!-- Ô -->
+                <div class="letter-card">
+                    <div class="letter-main">Ô ô</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "uo" (Diphthong)
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> ähnlich "uo" schnell gesprochen
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>môj</strong> (mein)
+                    </div>
+                </div>
+
+                <!-- P -->
+                <div class="letter-card">
+                    <div class="letter-main">P p</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "p"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Papier
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>pero</strong> (Feder)
+                    </div>
+                </div>
+
+                <!-- Q -->
+                <div class="letter-card">
+                    <div class="letter-main">Q q</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "kv"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Quelle (nur in Fremdwörtern)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>quiz</strong> (Quiz)
+                    </div>
+                </div>
+
+                <!-- R -->
+                <div class="letter-card">
+                    <div class="letter-main">R r</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> gerolltes "r"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie bayerisches "r"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ruka</strong> (Hand)
+                    </div>
+                </div>
+
+                <!-- Ŕ -->
+                <div class="letter-card">
+                    <div class="letter-main">Ŕ ŕ</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes gerolltes "r"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie "r" aber länger gerollt
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>vŕba</strong> (Weide)
+                    </div>
+                </div>
+
+                <!-- S -->
+                <div class="letter-card">
+                    <div class="letter-main">S s</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie scharfes "s" in "Haus"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Haus, Maus (immer scharf!)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>syn</strong> (Sohn)
+                    </div>
+                </div>
+
+                <!-- Š -->
+                <div class="letter-card">
+                    <div class="letter-main">Š š</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "sch" in "Schule"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Schule
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>škola</strong> (Schule)
+                    </div>
+                </div>
+
+                <!-- T -->
+                <div class="letter-card">
+                    <div class="letter-main">T t</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "t"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Tisch
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>tam</strong> (dort)
+                    </div>
+                </div>
+
+                <!-- Ť -->
+                <div class="letter-card">
+                    <div class="letter-main">Ť ť</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> weiches "tj" (wie "Tü")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> ähnlich wie in "Matjes"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ťava</strong> (Kamel)
+                    </div>
+                </div>
+
+                <!-- U -->
+                <div class="letter-card">
+                    <div class="letter-main">U u</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "u"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Uhr
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ulica</strong> (Straße)
+                    </div>
+                </div>
+
+                <!-- Ú -->
+                <div class="letter-card">
+                    <div class="letter-main">Ú ú</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> langes "u" (wie "Uuh")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Uhr (länger)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>ústa</strong> (Mund)
+                    </div>
+                </div>
+
+                <!-- V -->
+                <div class="letter-card">
+                    <div class="letter-main">V v</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "w"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Wasser
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>voda</strong> (Wasser)
+                    </div>
+                </div>
+
+                <!-- W -->
+                <div class="letter-card">
+                    <div class="letter-main">W w</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "w"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Wagen (nur in Fremdwörtern)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>web</strong> (Web)
+                    </div>
+                </div>
+
+                <!-- X -->
+                <div class="letter-card">
+                    <div class="letter-main">X x</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "ks"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Axt (nur in Fremdwörtern)
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>fax</strong> (Fax)
+                    </div>
+                </div>
+
+                <!-- Y -->
+                <div class="letter-card">
+                    <div class="letter-main">Y y</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie deutsches "i"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie "i" in Igel
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>byť</strong> (sein)
+                    </div>
+                </div>
+
+                <!-- Ý -->
+                <div class="letter-card">
+                    <div class="letter-main">Ý ý</div>
+                                            <strong>Aussprache:</strong> langes "i" (wie "Iih")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie langes "i" in Liebe
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>dobrý</strong> (gut)
+                    </div>
+                </div>
+
+                <!-- Z -->
+                <div class="letter-card">
+                    <div class="letter-main">Z z</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie stimmhaftes "s"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> wie "s" in "Sonne"
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>zima</strong> (Winter)
+                    </div>
+                </div>
+
+                <!-- Ž -->
+                <div class="letter-card">
+                    <div class="letter-main">Ž ž</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> wie "j" in "Journal"
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Deutsch:</strong> Journal, Garage
+                    </div>
+                    <div class="example">
+                        Beispiel: <strong>žena</strong> (Frau)
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="special-note">
+                <h3>⚠️ Besondere Hinweise für Deutsche:</h3>
+                <ul>
+                    <li><strong>V vs. W:</strong> Das slowakische "V" wird wie deutsches "W" ausgesprochen!</li>
+                    <li><strong>S ist immer scharf:</strong> Anders als im Deutschen gibt es kein weiches "s" am Wortanfang</li>
+                    <li><strong>G ist immer hart:</strong> Nie wie "sch" in "Garage"</li>
+                    <li><strong>R wird gerollt:</strong> Wie im Bayerischen oder Österreichischen</li>
+                    <li><strong>Keine Umlaute ü und ö:</strong> Diese gibt es im Slowakischen nicht</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Übungsbeispiele - Erste Wörter</h2>
+
+            <div class="alphabet-grid">
+                <div class="letter-card">
+                    <div class="letter-main">Ahoj</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> A-hoj (Betonung auf "A")
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Hallo / Tschüss
+                    </div>
+                    <div class="example">
+                        Informelle Begrüßung unter Freunden
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Dobrý deň</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DOB-ree djen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Guten Tag
+                    </div>
+                    <div class="example">
+                        Formelle Begrüßung
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Ďakujem</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DJA-ku-jem
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Danke
+                    </div>
+                    <div class="example">
+                        Das "Ď" wird weich wie "dj" ausgesprochen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Prosím</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> PRO-seem
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Bitte
+                    </div>
+                    <div class="example">
+                        Auch: "Bitte schön" als Antwort auf "Danke"
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Áno</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> AAH-no
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Ja
+                    </div>
+                    <div class="example">
+                        Das "á" wird lang ausgesprochen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Nie</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> NI-je
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Nein
+                    </div>
+                    <div class="example">
+                        Zweisilbig aussprechen!
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Čau</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> TSCHAU
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Tschüss (informell)
+                    </div>
+                    <div class="example">
+                        Wie italienisch "Ciao"
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Voda</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> WO-da
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Wasser
+                    </div>
+                    <div class="example">
+                        "V" wird wie deutsches "W" ausgesprochen!
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Chlieb</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> CHLI-jeb
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Brot
+                    </div>
+                    <div class="example">
+                        "Ch" wie in "Bach"
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Pivo</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> PI-wo
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Bier
+                    </div>
+                    <div class="example">
+                        Wichtiges Wort! 🍺
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Kamarát</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> KA-ma-raat
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Freund
+                    </div>
+                    <div class="example">
+                        Das "á" wird lang gezogen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Rodina</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> RO-di-na
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Familie
+                    </div>
+                    <div class="example">
+                        "R" wird gerollt
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Zahlen 1-10</h2>
+
+            <div class="alphabet-grid">
+                <div class="letter-card">
+                    <div class="letter-main">1 - Jeden</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> JE-den
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">2 - Dva</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DVA
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">3 - Tri</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> TRI
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">4 - Štyri</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> SCHTI-ri
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">5 - Päť</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> PJÄTJ
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">6 - Šesť</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> SCHESTJ
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">7 - Sedem</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> SE-dem
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">8 - Osem</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> O-sem
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">9 - Deväť</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DE-vjätj
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">10 - Desať</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DE-satj
+                    </div>
+                </div>
+            </div>
+
+            <div class="tips-box">
+                <h3>🎯 Übungstipps:</h3>
+                <ul>
+                    <li><strong>Täglich üben:</strong> Nimm dir jeden Tag 5-10 Minuten Zeit, um die Buchstaben laut auszusprechen</li>
+                    <li><strong>YouTube nutzen:</strong> Suche nach "Slovak pronunciation" für Hörbeispiele</li>
+                    <li><strong>Mit Muttersprachlern sprechen:</strong> Apps wie HelloTalk oder Tandem helfen beim Üben</li>
+                    <li><strong>Slowakische Musik hören:</strong> Gewöhne dein Ohr an die Klänge der Sprache</li>
+                    <li><strong>Langsam anfangen:</strong> Konzentriere dich zuerst auf die schwierigen Buchstaben: č, š, ž, ď, ť, ň, ľ</li>
+                    <li><strong>Vergleiche mit Tschechisch:</strong> Die Sprachen sind sehr ähnlich, viele Ressourcen sind übertragbar</li>
+                </ul>
+            </div>
+
+            <div class="special-note">
+                <h3>📚 Weiterführende Ressourcen:</h3>
+                <ul>
+                    <li><strong>Forvo.com:</strong> Aussprache-Datenbank mit Muttersprachlern</li>
+                    <li><strong>Duolingo:</strong> Kostenlose App zum Slowakisch lernen</li>
+                    <li><strong>Slovak for You (Kniha):</strong> Beliebtes Lehrbuch für Anfänger</li>
+                    <li><strong>YouTube-Kanal "Learn Slovak with Lucia":</strong> Ausgezeichnete Videos für Anfänger</li>
+                    <li><strong>Slovake.eu:</strong> Online-Grammatik und Übungen</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Häufige Fehler vermeiden</h2>
+
+            <div class="alphabet-grid">
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> "V" wie deutsches "F" aussprechen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> "V" wie deutsches "W"
+                    </div>
+                    <div class="example">
+                        voda = WO-da (nicht FO-da)
+                    </div>
+                </div>
+
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> "S" weich aussprechen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> "S" immer scharf wie "ß"
+                    </div>
+                    <div class="example">
+                        syn = SYN (nicht ZYN)
+                    </div>
+                </div>
+
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> Betonung auf falscher Silbe
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> IMMER erste Silbe betonen
+                    </div>
+                    <div class="example">
+                        ĎAkujem (nicht djaKUjem)
+                    </div>
+                </div>
+
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> Lange Vokale zu kurz aussprechen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> Akzente beachten (á, é, í, ó, ú, ý)
+                    </div>
+                    <div class="example">
+                        -no)
+                    </div>
+                </div>
+
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> "R" nicht rollen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> "R" immer rollen
+                    </div>
+                    <div class="example">
+                        ruka = RRU-ka (gerolltes R)
+                    </div>
+                </div>
+
+                <div class="letter-card" style="border-color: #c62828;">
+                    <div class="letter-main">❌ → ✅</div>
+                    <div class="pronunciation">
+                        <strong>Fehler:</strong> "Ch" wie "K" aussprechen
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Richtig:</strong> "Ch" wie in "Bach"
+                    </div>
+                    <div class="example">
+                        chlieb = CHLI-jeb (nicht KLI-jeb)
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Interaktive Übungen</h2>
+
+            <div class="tips-box" style="background: #fff3e0;">
+                <h3>✍️ Schreibübung:</h3>
+                <p>Versuche diese deutschen Wörter mit slowakischen Buchstaben zu schreiben:</p>
+                <ul>
+                    <li><strong>Tschüss</strong> → Čau</li>
+                    <li><strong>Schule</strong> → Škola</li>
+                    <li><strong>Tee</strong> → Čaj</li>
+                    <li><strong>Danke</strong> → Ďakujem</li>
+                    <li><strong>Straße</strong> → Ulica</li>
+                </ul>
+            </div>
+
+            <div class="tips-box" style="background: #f3e5f5;">
+                <h3>🎤 Aussprache-Challenge:</h3>
+                <p>Übe diese schwierigen Wörter:</p>
+                <ul>
+                    <li><strong>Zmrzlina</strong> (ZMRZ-li-na) = Eis</li>
+                    <li><strong>Strč prst skrz krk</strong> = Zungenbrecher (bedeutet: "Steck den Finger durch den Hals")</li>
+                    <li><strong>Šťastie</strong> (SCHTJAS-tje) = Glück</li>
+                    <li><strong>Ľudia</strong> (LJU-dja) = Leute</li>
+                    <li><strong>Prší</strong> (PR-schee) = Es regnet</li>
+                </ul>
+            </div>
+
+            <h2 class="section-title">Vergleichstabelle: Deutsch ↔ Slowakisch</h2>
+
+            <div style="overflow-x: auto;">
+                <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                    <thead>
+                        <tr style="background: #0b4f9f; color: white;">
+                            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">Deutscher Laut</th>
+                            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">Slowakischer Buchstabe</th>
+                            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">Beispiel (DE)</th>
+                            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">Beispiel (SK)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background: #f5f5f5;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">tsch</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Č č</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Tschüss</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">čaj (Tee)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd;">sch</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Š š</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Schule</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">škola (Schule)</td>
+                        </tr>
+                        <tr style="background: #f5f5f5;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">j (Journal)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ž ž</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Garage</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">žena (Frau)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd;">ts</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>C c</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Zahl</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">cesta (Weg)</td>
+                        </tr>
+                        <tr style="background: #f5f5f5;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">ch (Bach)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ch ch</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Buch</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">chlieb (Brot)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd;">w</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>V v</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Wasser</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">voda (Wasser)</td>
+                        </tr>
+                        <tr style="background: #f5f5f5;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">dj (weich)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ď ď</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Adieu</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">ďakujem (danke)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd;">tj (weich)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ť ť</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Matjes</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">ťava (Kamel)</td>
+                        </tr>
+                        <tr style="background: #f5f5f5;">
+                            <td style="padding: 12px; border: 1px solid #ddd;">nj (weich)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ň ň</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Cognac</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">konň (Pferd)</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 12px; border: 1px solid #ddd;">lj (weich)</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;"><strong>Ľ ľ</strong></td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">Million</td>
+                            <td style="padding: 12px; border: 1px solid #ddd;">ľudia (Leute)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="section-title">Nützliche Phrasen für den Alltag</h2>
+
+            <div class="alphabet-grid">
+                <div class="letter-card">
+                    <div class="letter-main">Ako sa máš?</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> A-ko sa maash?
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Wie geht es dir?
+                    </div>
+                    <div class="example">
+                        Antwort: Dobre, ďakujem (Gut, danke)
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Volám sa...</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> WO-laam sa...
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Ich heiße...
+                    </div>
+                    <div class="example">
+                        Zur Vorstellung
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Nerozumiem</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> NE-ro-zu-mjem
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Ich verstehe nicht
+                    </div>
+                    <div class="example">
+                        Sehr nützlich beim Lernen!
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Hovoríte po nemecky?</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> HO-wo-ree-tje po NE-mets-ki?
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Sprechen Sie Deutsch?
+                    </div>
+                    <div class="example">
+                        Für Notfälle 😊
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Prepáčte</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> PRE-paatsch-tje
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Entschuldigung
+                    </div>
+                    <div class="example">
+                        Höfliche Form
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Koľko to stojí?</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> KOLJ-ko to STO-jee?
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Wie viel kostet das?
+                    </div>
+                    <div class="example">
+                        Beim Einkaufen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Kde je...?</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> GDE je...?
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Wo ist...?
+                    </div>
+                    <div class="example">
+                        Nach dem Weg fragen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Pomôžte mi</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> PO-moosh-tje mi
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Helfen Sie mir
+                    </div>
+                    <div class="example">
+                        In Notfällen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Teší ma</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> TE-schee ma
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Freut mich
+                    </div>
+                    <div class="example">
+                        Bei Vorstellungen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Na zdravie!</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> NA ZDRA-wje!
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Prost! / Gesundheit!
+                    </div>
+                    <div class="example">
+                        Beim Anstoßen 🍺
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Dobrú chuť!</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DOB-ruu CHUTJ!
+                    </div>
+                    <div class="german-comparison">
+                        <strong>Bedeutung:</strong> Guten Appetit!
+                    </div>
+                    <div class="example">
+                        Vor dem Essen
+                    </div>
+                </div>
+
+                <div class="letter-card">
+                    <div class="letter-main">Dovidenia</div>
+                    <div class="pronunciation">
+                        <strong>Aussprache:</strong> DO-wi-de-nja
+                    </div>
+                    <div class="german-comparison">
+                        chen und Slowaken verstehen sich gegenseitig ohne Probleme. Aber es gibt Unterschiede in Aussprache und Vokabular.</p>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #1e88e5;">
+                    <h4 style="color: #0b4f9f; margin-bottom: 10px;">❓ Welche Apps sind am besten zum Slowakisch lernen?</h4>
+                    <p><strong>Empfehlungen:</strong> Duolingo (Grundlagen), Memrise (Vokabeln), HelloTalk (Sprachpartner), Forvo (Aussprache), Anki (Karteikarten). Kombiniere mehrere Apps für beste Ergebnisse!</p>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #1e88e5;">
+                    <h4 style="color: #0b4f9f; margin-bottom: 10px;">❓ Muss ich das R rollen können?</h4>
+                    <p>Idealerweise ja, aber Slowaken werden dich auch ohne gerolltes R verstehen. Es klingt nur authentischer. Übe es täglich - viele Deutsche können es nach einigen Wochen Training!</p>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #1e88e5;">
+                    <h4 style="color: #0b4f9f; margin-bottom: 10px;">❓ Sprechen viele Slowaken Deutsch?</h4>
+                    <p>Ja, besonders in Bratislava und touristischen Gebieten. Viele ältere Menschen sprechen Deutsch, jüngere eher Englisch. Aber deine Slowakisch-Bemühungen werden sehr geschätzt!</p>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #1e88e5;">
+                    <h4 style="color: #0b4f9f; margin-bottom: 10px;">❓ Was sind die schwierigsten Aspekte für Deutsche?</h4>
+                    <p><strong>Top 3 Herausforderungen:</strong> 1) Weiche Konsonanten (ď, ť, ň, ľ), 2) Sieben Fälle in der Grammatik, 3) Aspekte bei Verben (perfektiv/imperfektiv). Aber keine Sorge - mit Übung wird es leichter!</p>
+                </div>
+
+                <div style="background: #f5f5f5; padding: 20px; border-radius: 10px; margin: 15px 0; border-left: 5px solid #1e88e5;">
+                    <h4 style="color: #0b4f9f; margin-bottom: 10px;">❓ Gibt es kostenlose Online-Kurse?</h4>
+                    <p><strong>Ja!</strong> Slovake.eu (Grammatik), Learn Slovak with Lucia (YouTube), Slovak for You (teilweise kostenlos), Duolingo, und viele YouTube-Kanäle bieten kostenloses Material.</p>
+                </div>
+            </div>
+
+            <h2 class="section-title">Zusätzliche Ressourcen & Links</h2>
+
+            <div class="alphabet-grid">
+                <div class="letter-card" style="border-color: #e91e63;">
+                    <div class="letter-main">📱</div>
+                    <div style="margin: 10px 0;">
+                        <strong>Apps & Software</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>Duolingo (Grundkurs)</li>
+                        <li>Memrise (Vokabeltrainer)</li>
+                        <li>Anki (Karteikarten)</li>
+                        <li>HelloTalk (Tandem)</li>
+                        <li>Drops (Visuelles Lernen)</li>
+                    </ul>
+                </div>
+
+                <div class="letter-card" style="border-color: #9c27b0;">
+                    <div class="letter-main">📺</div>
+                    <div style="margin: 10px 0;">
+                        <strong>YouTube-Kanäle</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>Learn Slovak with Lucia</li>
+                        <li>Slovak Language Lessons</li>
+                        <li>Easy Slovak</li>
+                        <li>Slovak for Beginners</li>
+                        <li>Real Slovak</li>
+                    </ul>
+                </div>
+
+                <div class="letter-card" style="border-color: #3f51b5;">
+                    <div class="letter-main">📚</div>
+                    <div style="margin: 10px 0;">
+                        <strong>Bücher</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>Slovak for You (A1-A2)</li>
+                        <li>Colloquial Slovak</li>
+                        <li>Teach Yourself Slovak</li>
+                        <li>Slovak Grammar</li>
+                        <li>Slovak-German Dictionary</li>
+                    </ul>
+                </div>
+
+                <div class="letter-card" style="border-color: #009688;">
+                    <div class="letter-main">🌐</div>
+                    <div style="margin: 10px 0;">
+                        <strong>Websites</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>slovake.eu (Grammatik)</li>
+                        <li>forvo.com (Aussprache)</li>
+                        <li>slovnik.sk (Wörterbuch)</li>
+                        <li>dict.cc (DE-SK)</li>
+                        <li>lingq.com (Lesematerial)</li>
+                    </ul>
+                </div>
+
+                <div class="letter-card" style="border-color: #ff9800;">
+                    <div class="letter-main">🎧</div>
+                    <div style="margin: 10px 0;">
+                        <strong>Podcasts & Radio</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>Rádio Expres</li>
+                        <li>Fun Rádio</li>
+                        <li>Rádio_FM</li>
+                        <li>Slovak Podcast (Spotify)</li>
+                        <li>News in Slow Slovak</li>
+                    </ul>
+                </div>
+
+                <div class="letter-card" style="border-color: #f44336;">
+                    <div class="letter-main">👥</div>
+                    <div style="margin: 10px 0;">
+                        <strong>Communities</strong>
+                    </div>
+                    <ul style="font-size: 0.9em; margin-left: 20px; text-align: left;">
+                        <li>r/Slovak (Reddit)</li>
+                        <li>Slovak Language FB-Gruppe</li>
+                        <li>italki (Lehrer finden)</li>
+                        <li>Tandem App</li>
+                        <li>Discord Slovak Learners</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tips-box" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+                <h3 style="color: white;">🎯 Dein Erfolgsplan - Zusammenfassung</h3>
+                <ol style="margin-left: 20px; line-height: 2;">
+                    <li><strong>Woche 1-2:</strong> Alphabet und Aussprache perfektionieren (täglich 20 Min.)</li>
+                    <li><strong>Woche 3-4:</strong> Grundvokabular aufbauen (100 wichtigste Wörter)</li>
+                    <li><strong>Monat 2:</strong> Einfache Sätze bilden, Grammatik-Grundlagen</li>
+                    <li><strong>Monat 3:</strong> Konversationen üben, Hörverständnis trainieren</li>
+                    <li><strong>Monat 4-6:</strong> Aktiv sprechen, Fehler machen, lernen!</li>
+                    <li><strong>Ab Monat 6:</strong> Medien konsumieren (Filme, Bücher, Podcasts)</li>
+                </ol>
+                <p style="margin-top: 20px; font-size: 1.1em;"><strong>Wichtigste Regel:</strong> Jeden Tag ein bisschen ist besser als einmal pro Woche viel! 🚀</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); padding: 40px; border-radius: 15px; text-align: center; color: white; margin: 40px 0;">
+                <h2 style="font-size: 2.5em; margin-bottom: 20px;">🎉 Veľa šťastia!</h2>
+                <p style="font-size: 1.3em; margin-bottom: 10px;">(Viel Glück!)</p>
+                <p style="font-size: 1.1em; line-height: 1.8;">
+                    Du hast jetzt alle Werkzeuge, um mit dem Slowakisch-Lernen zu beginnen!<br>
+                    Denk daran: Jeder Muttersprachler hat auch mal bei Null angefangen.<br>
+                    <strong>Neboj sa robiť chyby!</strong> (Hab keine Angst, Fehler zu machen!)<br><br>
+                    Viel Erfolg auf deiner Sprachreise! 🇸🇰❤️🇩🇪
+                </p>
+            </div>
+
+            <div class="special-note" style="background: #e8f5e9; border-left-color: #4caf50;">
+                <h3>✅ Checkliste für deinen Start:</h3>
+                <ul style="line-height: 2;">
+                    <li>☐ Duolingo installiert und ersten Kurs gestartet</li>
+                    <li>☐ YouTube-Kanal "Learn Slovak with Lucia" abonniert</li>
+                    <li>☐ Forvo.com Lesezeichen gesetzt für Aussprache</li>
+                    <li>☐ Karteikarten-App (Anki) heruntergeladen</li>
+                    <li>☐ Ersten Tandem-Partner auf HelloTalk gesucht</li>
+                    <li>☐ Slowakische Musik-Playlist auf Spotify erstellt</li>
+                    <li>☐ Kalender-Erinnerung für tägliches 15-Min-Training gesetzt</li>
+                    <li>☐ Diese Seite als Lesezeichen gespeichert! 😊</li>
+                </ul>
+            </div>
+
+            <div style="background: #fff3e0; padding: 30px; border-radius: 15px; margin: 30px 0; border: 3px dashed #ff9800;">
+                <h3 style="color: #e65100; text-align: center; margin-bottom: 20px;">💪 Motivations-Boost</h3>
+                <div style="text-align: center; font-size: 1.1em; line-height: 2;">
+                    <p><em>"Kto sa nebojí, ten vyhráva."</em></p>
+                    <p><strong>(Wer keine Angst hat, gewinnt.)</strong></p>
+                    <p style="margin-top: 20px;">Slowakisches Sprichwort</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 50px 0;">
+                <div style="display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 20px 40px; border-radius: 50px; color: white; font-size: 1.3em; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                    <strong>Teraz začni! (Jetzt fang an!) 🚀</strong>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            <p style="font-size: 1.1em; margin-bottom: 10px;">
+                <strong>Slowakisch für Deutsche - Alphabet & Aussprache</strong>
+            </p>
+            <p style="opacity: 0.8; margin: 10px 0;">
+                Erstellt mit ❤️ für alle Deutschen, die Slowakisch lernen möchten
+            </p>
+            <p style="opacity: 0.7; font-size: 0.9em; margin-top: 15px;">
+                🇩🇪 Viel Erfolg beim Lernen! | Veľa úspechov pri učení! 🇸🇰
+            </p>
+            <p style="opacity: 0.6; font-size: 0.85em; margin-top: 20px;">
+                Tipp: Speichere diese Seite als Lesezeichen und komm regelmäßig zurück!
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scroll für bessere Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Hover-Effekt für Buchstabenkarten
+        document.querySelectorAll('.letter-card').forEach(card => {
+            card.addEventListener('click', function() {
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = '';
+                }, 200);
+            });
+        });
+
+        // Scroll-to-top Button (optional)
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                if (!document.getElementById('scrollTopBtn')) {
+                    const btn = document.createElement('button');
+                    btn.id = 'scrollTopBtn';
+                    btn.innerHTML = '↑';
+                    btn.style.cssText = `
+                        position: fixed;
+                        bottom: 30px;
+                        right: 30px;
+                                                color: white;
+                        border: none;
+                        border-radius: 50%;
+                        width: 50px;
+                        height: 50px;
+                        font-size: 24px;
+                        cursor: pointer;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                        z-index: 1000;
+                        transition: all 0.3s ease;
+                    `;
+                    btn.addEventListener('click', () => {
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
+                    });
+                    btn.addEventListener('mouseenter', () => {
+                        btn.style.background = '#0b4f9f';
+                        btn.style.transform = 'scale(1.1)';
+                    });
+                    btn.addEventListener('mouseleave', () => {
+                        btn.style.background = '#1e88e5';
+                        btn.style.transform = 'scale(1)';
+                    });
+                    document.body.appendChild(btn);
+                }
+            } else {
+                const btn = document.getElementById('scrollTopBtn');
+                if (btn) {
+                    btn.remove();
+                }
+            }
+        });
+
+        // Fortschritts-Tracker (optional - speichert im LocalStorage)
+        function initProgressTracker() {
+            const cards = document.querySelectorAll('.letter-card');
+            cards.forEach((card, index) => {
+                const letterMain = card.querySelector('.letter-main');
+                if (letterMain) {
+                    const letter = letterMain.textContent.trim();
+                    const isLearned = localStorage.getItem(`learned_${letter}`) === 'true';
+                    
+                    if (isLearned) {
+                        card.style.background = '#e8f5e9';
+                        card.style.borderColor = '#4caf50';
+                    }
+
+                    // Doppelklick zum Markieren als gelernt
+                    card.addEventListener('dblclick', function() {
+                        const currentState = localStorage.getItem(`learned_${letter}`) === 'true';
+                        localStorage.setItem(`learned_${letter}`, !currentState);
+                        
+                        if (!currentState) {
+                            this.style.background = '#e8f5e9';
+                            this.style.borderColor = '#4caf50';
+                            showNotification(`✅ ${letter} als gelernt markiert!`);
+                        } else {
+                            this.style.background = 'white';
+                            this.style.borderColor = '#e0e0e0';
+                            showNotification(`↩️ ${letter} zurückgesetzt`);
+                        }
+                    });
+                }
+            });
+        }
+
+        // Benachrichtigungs-Funktion
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: #4caf50;
+                color: white;
+                padding: 15px 25px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => notification.remove(), 300);
+            }, 2500);
+        }
+
+        // CSS-Animationen hinzufügen
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(400px);
+                    opacity: 0;
+                }
+            }
+
+            @keyframes pulse {
+                0%, 100% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.05);
+                }
+            }
+
+            .letter-card:active {
+                transform: scale(0.98);
+            }
+
+            @media print {
+                .audio-btn, #scrollTopBtn {
+                    display: none;
+                }
+                .letter-card {
+                    break-inside: avoid;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialisierung beim Laden der Seite
+        document.addEventListener('DOMContentLoaded', function() {
+            initProgressTracker();
+            
+            // Willkommens-Nachricht
+            setTimeout(() => {
+                showNotification('💡 Tipp: Doppelklick auf Karten zum Markieren als gelernt!');
+            }, 2000);
+
+            // Zufälliges Wort des Tages
+            const wordsOfDay = [
+                { word: 'Ahoj', meaning: 'Hallo', pronunciation: 'A-hoj' },
+                { word: 'Ďakujem', meaning: 'Danke', pronunciation: 'DJA-ku-jem' },
+                { word: 'Láska', meaning: 'Liebe', pronunciation: 'LAAS-ka' },
+                { word: 'Priateľ', meaning: 'Freund', pronunciation: 'PRI-ja-telj' },
+                { word: 'Šťastie', meaning: 'Glück', pronunciation: 'SCHTJAS-tje' }
+            ];
+            
+            const randomWord = wordsOfDay[Math.floor(Math.random() * wordsOfDay.length)];
+            
+            setTimeout(() => {
+                showNotification(`📖 Wort des Tages: ${randomWord.word} (${randomWord.meaning})`);
+            }, 5000);
+        });
+
+        // Tastatur-Shortcuts
+        document.addEventListener('keydown', function(e) {
+            // Strg + H für Hilfe
+            if (e.ctrlKey && e.key === 'h') {
+                e.preventDefault();
+                showNotification('⌨️ Shortcuts: Strg+H (Hilfe), Strg+R (Reset), Doppelklick (Markieren)');
+            }
+            
+            // Strg + R für Reset aller gelernten Buchstaben
+            if (e.ctrlKey && e.key === 'r') {
+                e.preventDefault();
+                if (confirm('Möchtest du wirklich alle Fortschritte zurücksetzen?')) {
+                    localStorage.clear();
+                    location.reload();
+                }
+            }
+        });
+
+        // Lernstatistik anzeigen
+        function showLearningStats() {
+            const totalLetters = 46; // Slowakisches Alphabet
+            let learnedCount = 0;
+            
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key.startsWith('learned_') && localStorage.getItem(key) === 'true') {
+                    learnedCount++;
+                }
+            }
+            
+            const percentage = Math.round((learnedCount / totalLetters) * 100);
+            return { learned: learnedCount, total: totalLetters, percentage: percentage };
+        }
+
+        // Fortschrittsbalken erstellen
+        function createProgressBar() {
+            const stats = showLearningStats();
+            const progressContainer = document.createElement('div');
+            progressContainer.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                left: 20px;
+                background: white;
+                padding: 15px 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                z-index: 1000;
+                min-width: 200px;
+            `;
+            
+            progressContainer.innerHTML = `
+                <div style="font-weight: bold; margin-bottom: 8px; color: #0b4f9f;">
+                    Dein Fortschritt
+                </div>
+                <div style="background: #e0e0e0; height: 20px; border-radius: 10px; overflow: hidden;">
+                    <div style="background: linear-gradient(90deg, #4caf50, #8bc34a); height: 100%; width: ${stats.percentage}%; transition: width 0.5s ease;"></div>
+                </div>
+                <div style="margin-top: 8px; font-size: 0.9em; color: #666;">
+                    ${stats.learned} von ${stats.total} Buchstaben (${stats.percentage}%)
+                </div>
+            `;
+            
+            return progressContainer;
+        }
+
+        // Fortschrittsbalken nach 3 Sekunden anzeigen
+        setTimeout(() => {
+            const progressBar = createProgressBar();
+            document.body.appendChild(progressBar);
+            
+            // Nach 10 Sekunden ausblenden
+            setTimeout(() => {
+                progressBar.style.animation = 'slideOut 0.5s ease';
+                setTimeout(() => progressBar.remove(), 500);
+            }, 10000);
+        }, 3000);
+
+        // Druckfunktion optimieren
+        window.addEventListener('beforeprint', function() {
+            document.querySelectorAll('.letter-card').forEach(card => {
+                card.style.pageBreakInside = 'avoid';
+            });
+        });
+
+        // Offline-Verfügbarkeit Hinweis
+        if (!navigator.onLine) {
+            showNotification('📵 Du bist offline - einige Funktionen sind eingeschränkt');
+        }
+
+        window.addEventListener('online', () => {
+            showNotification('✅ Wieder online!');
+        });
+
+        window.addEventListener('offline', () => {
+            showNotification('📵 Verbindung verloren');
+        });
+
+        // Suchfunktion (optional)
+        function createSearchBox() {
+            const searchContainer = document.createElement('div');
+            searchContainer.style.cssText = `
+                position: sticky;
+                top: 20px;
+                z-index: 100;
+                margin: 20px 0;
+                text-align: center;
+            `;
+            
+            searchContainer.innerHTML = `
+                <input type="text" id="searchInput" placeholder="🔍 Suche Buchstaben oder Wörter..." 
+                    style="
+                        width: 80%;
+                        max-width: 500px;
+                        padding: 15px 20px;
+                        font-size: 1.1em;
+                        border: 2px solid #1e88e5;
+                        border-radius: 25px;
+                        outline: none;
+                        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+                    ">
+            `;
+            
+            const content = document.querySelector('.content');
+            content.insertBefore(searchContainer, content.firstChild);
+            
+            // Such-Funktionalität
+            document.getElementById('searchInput').addEventListener('input', function(e) {
+                const searchTerm = e.target.value.toLowerCase();
+                const cards = document.querySelectorAll('.letter-card');
+                
+                cards.forEach(card => {
+                    const text = card.textContent.toLowerCase();
+                    if (text.includes(searchTerm)) {
+                        card.style.display = 'block';
+                        if (searchTerm.length > 0) {
+                            card.style.animation = 'pulse 0.5s ease';
+                        }
+                    } else {
+                        card.style.display = searchTerm.length > 0 ? 'none' : 'block';
+                    }
+                });
+            });
+        }
+
+        // Suchbox nach dem Laden hinzufügen
+        window.addEventListener('load', () => {
+            createSearchBox();
+        });
+
+        console.log('🇸🇰 Slowakisch-Lernseite geladen! Viel Erfolg beim Lernen!');
+        console.log('💡 Tipp: Nutze Doppelklick auf Karten, um deinen Fortschritt zu tracken!');
+    </script>
+</body>
+</html>
